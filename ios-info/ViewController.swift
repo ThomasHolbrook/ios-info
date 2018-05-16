@@ -39,10 +39,7 @@ class ViewController: UIViewController {
         
         else {
             label_serial.text = "Serial Number Not Found"
-            let img = Barcode.fromString(string: "F9FQV11VGHMG")
-            imageBarcode.image = img
-            imageBarcode.layer.cornerRadius = 8.0
-            imageBarcode.clipsToBounds = true
+
         }
         
         if deviceName != "Not Found" {
