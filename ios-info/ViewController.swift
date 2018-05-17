@@ -17,7 +17,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var label_username: UILabel!
     @IBOutlet weak var label_serial: UILabel!
     
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
@@ -51,7 +53,10 @@ class ViewController: UIViewController {
         if deviceUsername != "Not Found" {
             label_username.text = deviceUsername
         }
+    
     }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -15,7 +15,9 @@ class Preferences {
         var result = "Not Found"
         
         if let managedConf = UserDefaults.standard.object(forKey: "com.apple.configuration.managed") as? [String:Any?] {
-            result = (managedConf[entry] as? String)!
+            if let castedString = managedConf[entry] as? String {
+                    result = castedString
+            }
         }
         return result
     }
